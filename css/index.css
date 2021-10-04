@@ -40,7 +40,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 /* header */
@@ -129,6 +128,10 @@ a {
 
 .information__content {
   padding-top: 81px;
+}
+
+.contact__info a {
+  color: #fff;
 }
 
 .information__content--links {
@@ -327,6 +330,7 @@ a:hover,
 
 .form__link {
   text-decoration: underline;
+  color: #fff;
 }
 
 .form__btn {
@@ -341,11 +345,52 @@ a:hover,
   display: flex;
 }
 
+/* conditions */
+.conditions__box {
+  width: 100%;
+  max-height: 622px;
+  height: 100%;
+  background: #262626;
+  overflow-y: scroll;
+  padding: 15px;
+  font-size: 2.5rem;
+}
+
+.condition__description {
+  white-space: break-spaces;
+}
+
+.page__title--center {
+  max-width: 1539px;
+  width: 100%;
+  text-align: center;
+}
+
+.condition__link {
+  color: #f08366;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  margin-top: 15px;
+}
+
 /* media */
 
 @media screen and (max-width: 1900px) {
   .contact__info--links {
     max-width: 355px;
+  }
+
+  .conditions__box {
+    max-height: 581px;
+    height: 100%;
+  }
+
+  .condition__link {
+    font-size: 2rem;
+  }
+
+  .condition__description {
+    font-size: 1.8rem;
   }
 }
 
@@ -524,6 +569,20 @@ a:hover,
   .contact__time-big {
     display: flex;
     order: 1;
+  }
+
+  .conditions__box {
+    max-height: 290px;
+    height: 100%;
+  }
+
+  .condition__link {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .condition__description {
+    font-size: 1.4rem;
   }
 }
 
